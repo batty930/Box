@@ -2,10 +2,12 @@ package racing;
 
 public class Racing {
     public static void main(String[] args) {
-        Horse h1 = new Horse();
+        Hourse h1 = new Hourse();
+        Hourse h2 = new Hourse();
         h1.start();
-        Horse h2 = new Horse();
         h2.start();
-
+        Hourserunnable h3 = new Hourserunnable();
+        Thread thread = new Thread(h3);
+        thread.start();
     }
 }
